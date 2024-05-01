@@ -3,10 +3,10 @@
 coloque nas sessões indicadas*/
 
 :root{
-    /*Insira a variavel das outras cores inspecionando o modelo do figma*/
-    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
+   --color-text: #386651
+   --color-section: #EAF2FD;
 }
 
 body {
@@ -18,11 +18,16 @@ body {
     line-height: 1;
 }
 
-.page {
-    max-width: 1440px;
-    margin: 0 auto;
+ .page {
+    /* max-width: 1440px;
+    margin: 32px auto;
     padding-top: 32px;
+    height: 100vh; */
+    width: 100%;
+    max-width: 1136px;
+    margin: auto;
 }
+
 
 ol, ul,li {
     list-style: none;
@@ -74,21 +79,120 @@ nav{
 
 /*Sessão Title*/
 
-section.title{
-
+.title__div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-right: 17px;
 }
+
+.title__profile {
+    width: 368px;
+    height: 368px;
+    border-radius: 50%;
+    /* margin-top: 20px; */
+}
+
+.title__bio {
+    font-weight: 700;
+    font-size: 52px;
+    line-height: 61.05px;
+    padding-top: 32px;
+    margin-bottom: 24px;
+}
+
+.title__subsection {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25.83px;
+    padding-bottom: 24px;
+}
+
+.title__network {
+    display: flex;
+    gap: 32px;
+    padding: 0px;
+    border-bottom: 2px solid transparent;
+}
+.title__network__item a:hover {
+    color: var(--color-text);
+    text-decoration: underline;
+    /* border-bottom: 2px solid var(--color-text); */
+}
+
 
 /*Sessão About*/
 
-section.about{
-
+.about{
+    background-color: var(--color-section);
+    border-radius: 32px;
+    
+    margin-top: 32px;
 }
+
+
+.about__container__conteudo {
+    max-width: 751px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--color-text);
+}
+
+.about__paragraph {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.78px;
+    color: var(--color-text);
+}
+
+
+.about__paragraph__bold {
+    color: var(--color-text);
+}
+
 
 /*Sessão Hobbies*/
 
-section.hobbies{
-    
+
+.skills__title,
+.hobbies__title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--color-text);
 }
+
+.hobbies__title {
+    padding-top: 50px;
+}
+
+.skills__line,
+.hobbies__line {
+    display: flex;
+    gap: 15px;
+}
+
+.skills__box,
+.hobbies__box {
+    flex: 1 1 30%;
+    display: flex;
+    align-items: flex-end;
+    height: 150px;
+    background-color: var(--color-text-button);
+}
+
+.skills__name,
+.hobbies__name {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--color-text);
+    margin-top: 08px;
+}
+
+
 
 /* Experiência Acadêmica*/
 
