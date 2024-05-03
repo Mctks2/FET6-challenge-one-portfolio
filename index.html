@@ -6,10 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Folha de estilo de CSS Linkado -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="./src/assets/matrix.jpg" type="image/jpeg">
 
     <!-- Fonte do Projeto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
@@ -20,13 +24,9 @@
     <!-- Sessão de Menu  -->
     <div class="page">
     <section class="menu">
-        <!-- <header>
-            <img src="assets\vector.png">
-            <h3 class="menu__title">Thiago Souza</h3>
-        </header> -->
         <nav>
             <a id="logo" href="#">
-                <img src="assets\vector.png">
+                <img src="./src/assets/vector.png">
                 <h3>Thiago Souza</h3> 
             </a>
             
@@ -38,7 +38,6 @@
                 <li class="menu__list__item"><a href="#xp">Experiência</a></li>
                 <li class="menu__list__item"><a href="#contato">Contato</a></li>
             </ul>
-            <!-- <li class="menu__list__item__contato"><a href="#contato">contato@fulana.com</a></li> -->
         </nav>
     </section>
 
@@ -49,14 +48,14 @@
                 class="title__profile"   
                 src="https://github.com/Mctks2.png"
                 alt="Foto do usuário">
-            <div class="title__container" id="#sobremim">
+            <div class="title__container">
                 <h2 class="title__bio">Olá, meu nome é <strong class="about__paragraph__bold">Thiago Souza </strong> e construo páginas web</h2>
                 <h3 class="title__subsection">Eu sou formado em Sistemas de Informação e atualmente participando no projeto Oracle ONE na Alura.</h3>
                 <ul class="title__network">
-                    <li class="title__network__item"><a href="https://github.com/Mctks2" target="_blank">Github <img src="assets\arrow.png"> </a></li>
-                    <li class="title__network__item"><a href="https://www.linkedin.com/in/thiago-souza-8b492b149/" target="_blank">Linkedin <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="https://www.instagram.com/tkcamargo" target="_blank">Instagram <img src="assets\arrow.png"></a></li>
-                    <li class="title__network__item"><a href="https://drive.google.com/file/d/1fqTKn2ZE0Zkh6VIzC94vPQnWLvCyS4Vm/view?usp=sharing" target="_blank">Curriculo <img src="assets\arrow.png"></a></li>
+                    <li class="title__network__item"><a href="https://github.com/Mctks2" target="_blank">Github <img src="./src/assets/arrow.png"> </a></li>
+                    <li class="title__network__item"><a href="https://www.linkedin.com/in/thiago-souza-8b492b149/" target="_blank">Linkedin <img src="./src/assets/arrow.png"></a></li>
+                    <li class="title__network__item"><a href="https://www.instagram.com/tkcamargo" target="_blank">Instagram <img src="./src/assets/arrow.png"></a></li>
+                    <li class="title__network__item"><a href="https://drive.google.com/file/d/1fqTKn2ZE0Zkh6VIzC94vPQnWLvCyS4Vm/view?usp=sharing" target="_blank">Curriculo <img src="./src/assets/arrow.png"></a></li>
                 </ul>
             </div>
         </div>
@@ -64,14 +63,14 @@
 
         <!-- Sessão sobre mim -->
     <section class="about">
-        <div class="about__container">
+        <div class="about__container" id="sobremim">
             <h3 class="about__title">Sobre mim</h3>
 
             <p class="about__paragraph">Sou um desenvolvedor apaixonado por tecnologia, com especialização em front-end e habilidades fullstack. Minha jornada inclui o domínio de ferramentas essenciais como <strong class="about__paragraph__bold">HTML, CSS, JavaScript, React e TypeScript</strong>, aliadas a práticas sólidas de versionamento usando <strong class="about__paragraph__bold">Git</strong>.</p>
 
             <p class="about__paragraph">Além disso, estou familiarizado com o ambiente <strong class="about__paragraph__bold">Node.js</strong>, permitindo-me criar aplicações dinâmicas e eficientes. Tenho experiência em integração de <strong class="about__paragraph__bold">APIs</strong>, manipulação de <strong class="about__paragraph__bold">bancos de dados SQL</strong> e <strong class="about__paragraph__bold">uso de tecnologias de nuvem (Cloud e AWS)</strong> para garantir escalabilidade e desempenho nas aplicações que desenvolvo.</p>
             <!-- Caso queira colocar sua própria assinatura, insira aqui! -->
-            <img src="assets\signature.png">
+            <img src="./src/assets/signature.png">
         </div>
     </section>
 
@@ -81,21 +80,21 @@
             <div class="skills__line">
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"><img src="assets\htlm.png"></li>
+                        <li class="skills__img"><img src="./src/assets/htlm.png"></li>
                         <li class="skills__name"> Html 5</li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"> <img src="assets\css_icon.png" alt=""> </li>
+                        <li class="skills__img"> <img src="./src/assets/css_icon.png" alt=""> </li>
                         <li class="skills__name">CSS</li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"> <img src="assets\js_icon.png" alt=""></li>
+                        <li class="skills__img"> <img src="./src/assets/js_icon.png" alt=""></li>
                         <li class="skills__name">Javascript</li>
                     </ul>
                 </div>
@@ -103,14 +102,14 @@
 
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"><img src="assets\nodejs_icon.png" alt=""></li>
+                        <li class="skills__img"><img src="./src/assets/nodejs_icon.png" alt=""></li>
                         <li class="skills__name">Node JS</li>
                     </ul>
                 </div>
 
                 <div class="skills__box">
                     <ul>
-                        <li class="skills__img"> <img src="assets\react_icon.png" alt=""> </li>
+                        <li class="skills__img"> <img src="./src/assets/react_icon.png" alt=""> </li>
                         <li class="skills__name">React</li>
                     </ul>
                 </div>
@@ -125,35 +124,35 @@
             <div class="hobbies__line">
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"><img src="assets\academia.png"></li>
+                        <li class="hobbies__img"><img src="./src/assets/academia.png"></li>
                         <li class="hobbies__name">Treinar</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"> <img src="assets\livro-de-capa-preta-fechado.png" alt=""></li>
+                        <li class="hobbies__img"> <img src="./src/assets/livro-de-capa-preta-fechado.png" alt=""></li>
                         <li class="hobbies__name">Estudar</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"> <img src="assets\fones-de-ouvido.png" alt=""></li>
+                        <li class="hobbies__img"> <img src="./src/assets/fones-de-ouvido.png" alt=""></li>
                         <li class="hobbies__name">Ouvir música</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"><img src="assets\controle-de-video-game.png" alt=""></li>
+                        <li class="hobbies__img"><img src="./src/assets/controle-de-video-game.png" alt=""></li>
                         <li class="hobbies__name">Jogar games</li>
                     </ul>
                 </div>
 
                 <div class="hobbies__box">
                     <ul>
-                        <li class="hobbies__img"> <img src="assets\claquete.png" alt=""> </li>
+                        <li class="hobbies__img"> <img src="./src/assets/claquete.png" alt=""> </li>
                         <li class="hobbies__name"> Assistir filmes</li>
                     </ul>
                 </div>
@@ -167,7 +166,7 @@
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src="./assets/universidade-estacio-de-sa1.png"></li>
+                    <li class="academic__courses__item__img"><img src="./src/assets/universidade-estacio-de-sa1.png"></li>
                     <li class="academic__courses__item__title"><h4> Sistemas de Informação</h4></li>
                     <li class="academic__courses__item__subtitle"><p>2023 - UNESA</p></li>
                 </ul>
@@ -175,7 +174,7 @@
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src="./assets/alura-logo-2.png"></li>
+                    <li class="academic__courses__item__img"><img src="./src/assets/alura-logo-2.png"></li>
                     <li class="academic__courses__item__title"><h4>Formação Front-end</h4></li>
                     <li class="academic__courses__item__subtitle"><p>Em andamento - Alura</p></li>
                 </ul>
@@ -183,7 +182,7 @@
             <div class="academic__courses__box">
                 <ul class="academic__courses__list">
                     <!-- Insira a logo de seu local de formação -->
-                    <li class="academic__courses__item__img"><img src="./assets/Logo-CNA-2018.png"></li>
+                    <li class="academic__courses__item__img"><img src="./src/assets/Logo-CNA-2018.png"></li>
                     <li class="academic__courses__item__title"><h4>Curso de Inglês</h4></li>
                     <li class="academic__courses__item__subtitle"><p>Em andamento - CNA </p></li>
                 </ul>
@@ -196,56 +195,56 @@
         <h2 class="experience__section__title" id="xp">Experiência Profissional</h2>
         <div class="experiencie__box">
             <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="./assets/portf-alura.jpg">
+            <img class="experience__img" src="./src/assets/portf-alura.jpg">
             <div class="experience__info">
-                <h2 class="experience__title">Decodificador de texto</h2>
-                <h3 class="experience__text">Challenge Alura Codificador </h3>
+                <h2 class="experience__title">Portfólio alura</h2>
+                <h3 class="experience__text"> Curso de HTML e CSS </h3>
                     <div class="experience__description">
                         <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href="https://github.com/Mctks2/Portfolio-alura"><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href="https://mctks2.github.io/Portfolio-alura/"><button class="experiencia__botao--demo">Ver demo</button></a></span>
+                            <span class="experience__repo"><a href="https://github.com/Mctks2/Portfolio-alura"><button class="experience__button__repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="https://mctks2.github.io/Portfolio-alura/"><button class="experience__button__demo">Ver demo</button></a></span>
                     </div>
             </div>
         </div>  
 
-        <div class="experiencie__box">
+        <div class="experiencie__box_lateral">
             <!-- Insira a logo/captura de seu projeto/trabalho -->
-            <img class="experience__img" src="">
+            <img class="experience__img" src="./src/assets/X-men.jpg">
             <div class="experience__info">
-                <h2 class="experience__title">Jogo criado com HTML, CSS e JavaScript</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
+                <h2 class="experience__title">Landing Page X-Men</h2>
+                <h3 class="experience__text">Semana do Zero ao Programador Contratado</h3>
                     <div class="experience__description">
                         <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
+                            <span class="experience__repo"><a href="https://github.com/Mctks2/x-men-szpc"><button class="experience__button__repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="https://mctks2.github.io/x-men-szpc/"><button class="experience__button__demo">Ver demo</button></a></span>
                     </div>
             </div>
         </div>  
 
         <div class="experiencie__box">
             <!-- Insira a logo de seu projeto/trabalho -->
-            <img class="experience__img" src="">
+            <img class="experience__img" src="./src/assets/the-last-os-us.jpg">
             <div class="experience__info">
-                <h2 class="experience__title">Decodificador de texto</h2>
-                <h3 class="experience__text">Challenge Alura Codificador </h3>
+                <h2 class="experience__title">Landing Page The Last of Us</h2>
+                <h3 class="experience__text">Dev Quest</h3>
                     <div class="experience__description">
                         <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
+                            <span class="experience__repo"><a href="https://github.com/Mctks2/Projeto-the-last-of-us"><button class="experience__button__repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="https://mctks2.github.io/Projeto-the-last-of-us/"><button class="experience__button__demo">Ver demo</button></a></span>
                     </div>
             </div>
         </div>  
 
-        <div class="experiencie__box">
+        <div class="experiencie__box_lateral">
             <!-- Insira a logo de seu projeto/trabalho -->
-            <img class="experience__img" src="">
+            <img class="experience__img" src="./src/assets/tela-gta.jpg">
             <div class="experience__info">
-            <h2 class="experience__title">Jogo criado com HTML, CSS e JavaScript</h2>
-                <h3 class="experience__text">Challenge Oracle </h3>
+            <h2 class="experience__title">Landing Page GTAV</h2>
+                <h3 class="experience__text">Semana do Zero ao Programador Contratado</h3>
                     <div class="experience__description">
                         <!-- Insira a link para demonstração do projeto no Github e/ou GithubPages -->
-                            <span class="experience__repo"><a href=""><button class="experiencia__botao--repo">Repositório</button></a></span>
-                            <span class="experience__demo"><a href=""><button class="experiencia__botao--demo">Ver demo</button></a></span>
+                            <span class="experience__repo"><a href="https://github.com/Mctks2/Projeto-gta"><button class="experience__button__repo">Repositório</button></a></span>
+                            <span class="experience__demo"><a href="https://mctks2.github.io/Projeto-gta/"><button class="experience__button__demo">Ver demo</button></a></span>
                     </div>
         </div>
         </div>  
@@ -254,17 +253,17 @@
         <section class="formcontato">
             <div id="contato" class="formcontato__contacto">
                 <div class="formcontato--esquerda">
-                    <img class="formcontato__img" src="assets\contact_image.png">
+                    <img class="formcontato__img" src="./src/assets/contact_image.png">
                 </div>
                 <div class="formcontato__text">
                     <h2 class="formcontato__title">Contato</h2>
                     <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3>
                     <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
                     <form class="formcontato__form">
-                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome">
-                        <input class="formcontato__input" type="email" id="email" placeholder="Email">
-                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto">
-                        <textarea class="formcontato__textarea" rows="5" cols="40" id="mensagem" name="mensagem" placeholder="Sua mensagem"></textarea>
+                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome *" required minlength="8">
+                        <input class="formcontato__input" type="email" id="email" placeholder="Email *" required>
+                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto *" required>
+                        <textarea class="formcontato__textarea"  rows="5" cols="40" id="mensagem" name="mensagem"></textarea>
                         <button class="formcontato__botao">Enviar mensagem</button>
                     </form>
                 </div>
@@ -274,13 +273,13 @@
         <!-- Sessão de Footer/Rodapé-->
         <section class="footer">
             <div class="footer__rodape">
-                <p>Desenvolvido por Fulana de Tal</p>
-                <p>2022</p>
+                <p>Desenvolvido por Thiago Souza</p>
+                <p>2024</p>
             </div>
         </section>
     </div>
     <!-- Script Linkado do seu documento de JavaScript -->
-<script src="validate.js"></script>
+<script src="./src/js/validate.js"></script>
 </body>
 </html>
 
