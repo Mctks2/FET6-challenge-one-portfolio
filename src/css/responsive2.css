@@ -1,0 +1,102 @@
+@media (max-width: 768px) {
+  /* Sessão Menu */
+  
+  .page {
+  margin: 0 32px;  
+  }
+   
+  /* nav a {
+    margin: 0px 20px 0px 20px;
+  } */
+
+  .menu__list__item {
+    display: none; /* Esconde todos os itens do menu por padrão */
+  }
+
+  .menu__list__item.contato {
+    display: block; /* Mostra apenas o item com a classe "contato" */
+    font-weight: 700;
+  }
+
+  /* Sessão Title */
+  .title {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0px 32px 0px 32px; */
+  }
+
+  .title__profile {
+    width: 146px;
+    height: 146px;
+  }
+
+  .title__container{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0px 40px 32px;
+  }
+
+  .title__bio {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25.83px;
+  }
+
+  .title__subsection {
+    font-size: 16px;
+    gap: 8px;
+  }
+
+  /* Sessão Hobbies */
+  .skills__box,
+  .hobbies__box {
+    flex-basis: 100%;
+    flex-wrap: wrap; /* Define a base de flex para ocupar toda a largura */
+  }
+
+  /* Experiência Acadêmica */
+  .academic__courses {
+    flex-wrap: wrap; /* Permitir que os cursos quebrem para uma nova linha */
+    justify-content: center; /* Centralizar os cursos */
+    margin-right: 0; /* Remove a margem à direita */
+  }
+
+  /* Experiência */
+  .experiencie__box,
+  .experiencie__box_lateral {
+    flex-direction: column; /* Altera a direção para coluna em dispositivos menores */
+    gap: 20px; /* Adiciona espaçamento entre os elementos */
+    margin-bottom: 40px; /* Reduz a margem inferior */
+  }
+
+  .experience__img {
+    width: 100%; /* Define a largura total */
+    height: auto; /* Ajusta a altura automaticamente */
+    margin-right: 0; /* Remove a margem à direita */
+  }
+
+  .experience__button__repo,
+  .experience__button__demo {
+    width: 100%; /* Define a largura total para os botões */
+  }
+
+  /* Contato */
+  .formcontato__contacto {
+    flex-direction: column; /* Altera a direção para coluna em dispositivos menores */
+    gap: 20px; /* Adiciona espaçamento entre os elementos */
+  }
+
+  .formcontato__img {
+    width: 100%; /* Define a largura total */
+  }
+
+  .formcontato__text {
+    text-align: center; /* Centraliza o texto */
+  }
+
+  .formcontato__input,
+  .formcontato__textarea,
+  .formcontato__botao {
+    width: 100%; /* Define a largura total para os inputs e botão */
+  }
+}
