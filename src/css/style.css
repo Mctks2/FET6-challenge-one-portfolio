@@ -16,7 +16,7 @@
   font-size: 62.5%;
 }
 
-body {
+body{
   background-color: var(--color-background1);
   font-family: "Raleway";
   line-height: 1;
@@ -80,13 +80,17 @@ nav {
 /*Sessão Title*/
 
 .title{
-  gap: 32px;
+  margin-bottom: 32px;
 }
 
 .title__div {
   display: flex;
   justify-content: space-between;
   flex-direction: row-reverse;
+}
+
+.title__container {
+    margin-right: 17px; 
 }
 
 .title__profile {
@@ -105,13 +109,12 @@ nav {
   font-size: 22px;
   font-weight: 400;
   line-height: 25.83px;
-  gap: 24px;
+  margin: 20px 0;
 }
 
 .title__network {
   display: flex;
   gap: 32px;
-  padding: 0px;
   font-size: 16px;
 }
 
@@ -126,7 +129,7 @@ nav {
 .about {
   background-color: var(--color-section);
   border-radius: 32px;
-  margin-top: 32px;
+  margin-bottom: 32px;
 }
 
 .about__container {
@@ -137,6 +140,7 @@ nav {
   font-weight: 700;
   font-size: 30px;
   color: var(--color-text1);
+  margin-bottom: 16px;
 }
 
 .about__paragraph {
@@ -144,6 +148,7 @@ nav {
   font-size: 16px;
   line-height: 21.78px;
   color: var(--color-text1);
+  margin-bottom: 16px;
 }
 
 .about__paragraph__bold {
@@ -152,22 +157,24 @@ nav {
 
 /*Sessão Hobbies*/
 
+.skills,
+.hobbies {
+  margin-bottom: 88px;
+}
+
 .skills__title,
 .hobbies__title {
   text-align: center;
   font-weight: 700;
   font-size: 30px;
   color: var(--color-text1);
-}
-
-.hobbies__title {
-  padding-top: 50px;
+  margin-bottom: 32px;
 }
 
 .skills__line,
 .hobbies__line {
   display: flex;
-  gap: 15px;
+  gap: 16px;
 }
 
 .skills__box,
@@ -175,22 +182,35 @@ nav {
   flex: 1 1 30%;
   display: flex;
   align-items: flex-end;
-  height: 150px;
+  height: 174px;
   background-color: var(--color-background2);
   border-radius: 8px;
 }
+
+.skills__img,
+.skills__name{
+  margin-left: 16px;
+}
+
+ .hobbies__img,
+ .hobbies__name{
+  margin-left: 16px;
+} 
 
 .skills__name {
   font-weight: 700;
   font-size: 16px;
   color: var(--color-text3);
   margin-top: 8px;
+  margin-bottom: 16px;
 }
+
 .hobbies__name {
   font-weight: 700;
   font-size: 16px;
   color: var(--color-text0);
   margin-top: 8px;
+  margin-bottom: 16px;
 }
 
 /* Experiência Acadêmica*/
@@ -198,8 +218,8 @@ nav {
 .academic {
   background-color: var(--color-section);
   border-radius: 32px;
-  padding: 32px;
-  margin: 32px 0px;
+  margin-bottom: 32px; 
+  padding: 82px 0px 82px 0px;
 }
 
 .academic__title {
@@ -207,27 +227,25 @@ nav {
   font-weight: 700;
   font-size: 30px;
   color: var(--color-text1);
-  margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .academic__courses {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 20px;
-  margin-right: 50px;
 }
 
 .academic__courses__item__img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 190px;
+  height: 286px;
+  width: 288px; 
   background-color: var(--color-background2);
   border-radius: 8px;
-  padding: 8px 16px;
-  margin-bottom: 8px;
 }
+
 
 .logo__academico img {
   width: 192px;
@@ -240,8 +258,7 @@ nav {
   font-size: 20px;
   color: var(--color-text0);
   line-height: 25.83px;
-
-  margin-bottom: 8px;
+  margin: 8px 0px;
 }
 
 .academic__courses__item__subtitle {
@@ -253,19 +270,23 @@ nav {
 
 /* experiência*/
 
+.experience {
+  margin-bottom: 32px;
+}
+
 .experience__section__title {
   text-align: center;
-  padding-top: 20px;
   font-weight: 700;
   font-size: 30px;
   color: var(--color-text1);
+  margin-bottom: 32px;
 }
 
 .experiencie__box {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
-  margin-bottom: 80px;
+  gap: 16px;
+  margin-bottom: 64px;
 }
 
 
@@ -274,15 +295,14 @@ nav {
   justify-content: space-between;
   flex-direction: row-reverse;
   gap: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 64px;
 }
 
 .experience__img {
   max-width: 100%;
   border-radius: 8px;
   width: 752px;
-  height: 448px;
-  margin-right: 20px;
+  height: auto;
   box-shadow: 0px 3px 3px 3px var(--color-shadow);
 }
 
@@ -290,12 +310,12 @@ nav {
 .experience__info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-self: center; 
 }
 
 .experience__title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
   color: var(--color-text0);
 }
 
@@ -303,6 +323,7 @@ nav {
   font-weight: 500;
   font-size: 16px;
   color: var(--color-text1);
+  margin: 8px 0;
 }
 
 .experience__description {
@@ -319,6 +340,11 @@ nav {
   border: 1px solid var(--color-text3);
   flex-grow: 1;
   cursor: pointer;
+}
+
+.experience__button__repo {
+  background-color: var(--color-background2);
+  color: var(--color-text3);
 }
 
 .experience__button__demo {
@@ -340,21 +366,22 @@ nav {
 
 .formcontato {
   background-color: var(--color-section);
-  padding: 50px 0px;
   border-radius: 32px;
-  margin-top: 32px;
+  margin: 32px 0px;
+  padding-top: 64px;
+  gap: 16px;
 }
-
 
 .formcontato__img {
   max-width: 100%;
   border-radius: 15px;
   width: 420px;
+  height: 567px;
 }
 
 .formcontato__contacto {   
   display: flex;
-  gap: 30px;
+  gap: 16px;
   justify-content: center;
 }
 
@@ -362,7 +389,7 @@ nav {
   font-weight: 700;
   font-size: 30px;
   color: var(--color-text1);
-  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .formcontato__subtext {
@@ -374,7 +401,13 @@ nav {
 .formcontato__form {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.formcontato__input, 
+.formcontato__textarea {
+  font-family: "Raleway";
 }
 
 .formcontato__input {
@@ -419,6 +452,13 @@ input:invalid {
   border: 1px solid #FF1010;
  }
 
+ /* .formcontato__input::placeholder {
+  color: var(--color-text1);
+  font-size: 12px;
+  text-align: start;
+  transform: translateY(-19px);
+ } */
+
 /*footeer*/
 
 .footer {
@@ -430,7 +470,7 @@ input:invalid {
 
 .footer__rodape p {
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
-  color: var(--color-text1);
+  color: var(--color-text0);
 }
