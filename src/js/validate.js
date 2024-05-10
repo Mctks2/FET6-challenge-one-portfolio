@@ -29,7 +29,7 @@ function validateEmail() {
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (emailValue === '') {
-    errorEmail.textContent = 'O campo de e-mail não pode ficar em branco.';
+    errorEmail.textContent = 'O campo e-mail não pode ficar em branco.';
     return false;
   } else if (!emailRegex.test(emailValue)) {
     errorEmail.textContent = 'Por favor, insira um e-mail válido no formato texto@exemplo.com.';
@@ -45,10 +45,10 @@ function validateSubject() {
   const errorAssunto = document.getElementById('error-assunto');
 
   if (subjectValue === '') {
-    errorAssunto.textContent = 'O campo de Assunto não pode ficar em branco.';
+    errorAssunto.textContent = 'O campo Assunto não pode ficar em branco.';
     return false;
   } else if (subjectValue.length > 50) {
-    errorAssunto.textContent = 'O campo de Assunto não pode ter mais de 50 caracteres.';
+    errorAssunto.textContent = 'O campo Assunto não pode ter mais de 50 caracteres.';
     return false;
   } else {
     errorAssunto.textContent = '';
@@ -61,10 +61,10 @@ function validateMessage() {
   const errorMessage = document.getElementById('error-mensagem');
 
   if (messageValue === '') {
-    errorMessage.textContent = 'O campo de Mensagem não pode ficar em branco.';
+    errorMessage.textContent = 'O campo Mensagem não pode ficar em branco.';
     return false;
   } else if (messageValue.length > 300) {
-    errorMessage.textContent = 'O campo de Mensagem não pode ter mais de 300 caracteres.';
+    errorMessage.textContent = 'O campo Mensagem não pode ter mais de 300 caracteres.';
     return false;
   } else {
     errorMessage.textContent = '';
