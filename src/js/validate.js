@@ -1,104 +1,86 @@
-// VARIAVEIS
+// Seleciona os elementos do formulário
+const formContact = document.querySelector('.formcontato');
+const nameInput = document.querySelector("#nome");
+const emailInput = document.querySelector("#email");
+const subjectInput = document.querySelector("#assunto");
+const messageTextArea = document.querySelector("#mensagem");
+const sendBtn = document.querySelector("#botao");
 
-const nameInput = document.querySelector("nome").value;
-const nameErro = document.getElementById("nomeErro");
-
-const email = document.getElementById("email").value;
-const emailErro = document.getElementById("emailErro");
-const emailPattern = /^[^@]+@[^@]+\.[^@]+$/;
-
-const subject = document.getElementById("subject").value;
-const subjectErro = document.getElementById("subjectErro");
-
-const message = document.getElementById("message").value;
-const messageErro = document.getElementById("messageErro");
-
-const formContact = document.getElementById('formContact');
-
-const sendBtn = document.getElementById('sendBtn');
-// EVENTOS
-
-formContact.addEventListener('input', function() {
-  validateForm();
-});
-
-sendBtn.addEventListener("click", function () {
-  if (document.getElementById("formContact").checkValidity()) {
-    alert("Formulário enviado com sucesso!");
-    resetForm();
-    document.getElementById("sendBtn").disabled = true;
-  }
-});
-
-// FUNÇOES
-function validateForm() {
-  // Obtém o resultado de cada validação e armazena em isValid
-  let isValid = validateName() && validateEmail() && validateSubject() && validateMessage();
-
-  // Retorna isValid, que será true se todas as validações forem verdadeiras e false se alguma for falsa
-  return isValid;
-}
-
-
+// Validações de nome, email, assunto e mensagem
 function validateName() {
-  if (!nameInput) {
-    nameErro.textContent = "O campo nome é obrigatório.";
+  const nameValue = nameInput.value.trim();
+  const errorNome = document.getElementById('error-nome');
+
+  if (!nameValue) {
+    errorNome.textContent = "O campo nome é obrigatório";
     return false;
-  } else if (nameInput.length > 50) {
-    nameErro.textContent = "O nome não pode exceder 50 caracteres.";
+  } else if (nameValue.length > 50) {
+    errorNome.textContent = "O nome não pode exceder 50 caracteres";
     return false;
   } else {
-    nameErro.textContent = "";
+    errorNome.textContent = "";
     return true;
   }
 }
 
 function validateEmail() {
-  if (!email) {
-    emailErro.textContent = "O campo e-mail é obrigatório.";
+  const emailValue = emailInput.value.trim();
+  const errorEmail = document.getElementById('error-email');
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (emailValue === '') {
+    errorEmail.textContent = 'O campo de e-mail não pode ficar em branco.';
     return false;
-  } else if (!emailPattern.test(email)) {
-    emailErro.textContent = "O formato do e-mail é inválido.";
+  } else if (!emailRegex.test(emailValue)) {
+    errorEmail.textContent = 'Por favor, insira um e-mail válido no formato texto@exemplo.com.';
     return false;
   } else {
-    emailErro.textContent = "";
+    errorEmail.textContent = '';
     return true;
   }
 }
 
 function validateSubject() {
-  if (!subject) {
-    subjectErro.textContent = "O campo assunto é obrigatório.";
+  const subjectValue = subjectInput.value.trim();
+  const errorAssunto = document.getElementById('error-assunto');
+
+  if (subjectValue === '') {
+    errorAssunto.textContent = 'O campo de Assunto não pode ficar em branco.';
     return false;
-  } else if (subject.length > 50) {
-    subjectErro.textContent = "O assunto não pode exceder 50 caracteres.";
+  } else if (subjectValue.length > 50) {
+    errorAssunto.textContent = 'O campo de Assunto não pode ter mais de 50 caracteres.';
     return false;
   } else {
-    subjectErro.textContent = "";
+    errorAssunto.textContent = '';
     return true;
   }
 }
 
 function validateMessage() {
-  if (!message) {
-    messageErro.textContent = "O campo mensagem é obrigatório.";
+  const messageValue = messageTextArea.value.trim();
+  const errorMessage = document.getElementById('error-mensagem');
+
+  if (messageValue === '') {
+    errorMessage.textContent = 'O campo de Mensagem não pode ficar em branco.';
     return false;
-  } else if (message.length > 300) {
-    messageErro.textContent = "A mensagem não pode exceder 300 caracteres.";
+  } else if (messageValue.length > 300) {
+    errorMessage.textContent = 'O campo de Mensagem não pode ter mais de 300 caracteres.';
     return false;
   } else {
-    messageErro.textContent = "";
+    errorMessage.textContent = '';
     return true;
   }
 }
 
-function resetForm() {
-  document.getElementById("nome").value = "";
-  document.getElementById("email").value = "";
-  document.getElementById("assunto").value = "";
-  document.getElementById("mensagem").value = "";
-  document.getElementById("nomeErro").textContent = "";
-  document.getElementById("emailErro").textContent = "";
-  document.getElementById("assuntoErro").textContent = "";
-  document.getElementById("mensagemErro").textContent = "";
-}
+// Evento de submit do formulário
+formContact.addEventListener('submit', function(event) {
+  // Validar todos os campos ao enviar o formulário
+  const isValidName = validateName();
+  const isValidEmail = validateEmail();
+  const isValidSubject = validateSubject();
+  const isValidMessage = validateMessage();
+
+  if (!isValidName || !isValidEmail || !isValidSubject || !isValidMessage) {
+    event.preventDefault(); // Evita o envio do formulário se houver erros
+  }
+});

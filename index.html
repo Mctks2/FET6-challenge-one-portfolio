@@ -260,11 +260,15 @@
                     <h3 class="formcontato__subtext">Quer entrar em contato comigo?</h3></br>
                     <h3 class="formcontato__subtext">Preencha o formulário ao lado e entrarei em contato o mais rápido possível. </h3>
                     <form class="formcontato__form">
-                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome" required>
-                        <input class="formcontato__input" type="email" id="email" placeholder="Email" required>
-                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" required>
+                        <input class="formcontato__input" type="text" id="nome" placeholder="Nome" >
+                        <div class="error-message" id="error-nome"></div>
+                        <input class="formcontato__input" type="email" id="email" placeholder="Email" >
+                        <div class="error-message" id="error-email"></div>
+                        <input class="formcontato__input" type="text" id="assunto" placeholder="Assunto" >
+                        <div class="error-message" id="error-assunto"></div>
                         <textarea class="formcontato__textarea"  rows="5" cols="40" id="mensagem" name="Mensagem" placeholder="Mensagem"></textarea>
-                        <button class="formcontato__botao">Enviar mensagem</button>
+                        <div class="error-message" id="error-mensagem"></div>
+                        <button class="formcontato__botao" type="submit" id="botao">Enviar mensagem</button>
                     </form>
                 </div>
             </div>
